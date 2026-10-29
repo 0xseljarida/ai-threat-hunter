@@ -1,27 +1,37 @@
-# AI Threat Hunting Agent
+# Agent IA de recherche de menaces
 
-An AI agent that turns a threat hypothesis into an investigation plan, queries laboratory logs, gathers evidence, and explains its findings.
+## Mon idée
 
-**Status:** project planning. The architecture, tools, and milestones below are proposals; they do not describe a working implementation yet.
+Mon idée est de mettre en place un serveur local sur un Raspberry Pi et d'utiliser une intelligence artificielle pour analyser ses journaux d'événements (logs). À partir de ces logs, l'agent IA aidera à repérer des activités suspectes, à enquêter sur de possibles menaces et à expliquer ses observations en s'appuyant sur des preuves.
 
-## Official project
+**État du projet :** en phase de conception. Le serveur et l'agent IA décrits ici sont prévus ; leur mise en œuvre reste à réaliser.
+
+## Sujet officiel
 
 **Subject 9: Agent IA de Threat Hunting**
 
 > Construire un agent qui transforme une hypothèse de menace en plan d'investigation, génère des requêtes sur des logs de laboratoire, interprète les résultats et rassemble les preuves. Le système doit justifier ses conclusions, indiquer l'incertitude et associer les observations aux tactiques et techniques MITRE ATT&CK.
 
-Required concepts: **AI Agent, LLM, SIEM/logs, RAG, MITRE ATT&CK**.
+Concepts requis : **agent IA, LLM, SIEM/logs, RAG, MITRE ATT&CK**.
 
-The assignment is available in [subject.pdf](subject.pdf).
+L'énoncé est disponible dans [subject.pdf](subject.pdf).
 
-## What is threat hunting?
+## Qu'est-ce que la recherche de menaces ?
 
-Threat hunting means actively looking for evidence of an attack, including situations where no automatic alert has fired.
+La recherche de menaces, ou *threat hunting*, consiste à rechercher activement des indices d'une attaque, même lorsqu'aucune alerte automatique n'a été déclenchée.
 
-A hunt starts with a hypothesis, such as:
+Une investigation commence par une hypothèse, par exemple :
 
-> Someone may have guessed an SSH password and accessed the Raspberry Pi.
+> Quelqu'un a peut-être deviné un mot de passe SSH et accédé au Raspberry Pi.
 
-The investigator decides which records could support or contradict that idea, searches them, and assesses the results. A hypothesis is a question to investigate, rather than a conclusion to prove.
+L'agent transforme cette hypothèse en plan d'investigation : il détermine quels logs pourraient la confirmer ou la contredire, génère les requêtes nécessaires, interprète les résultats et rassemble les preuves. Il explique ensuite ses conclusions, précise les incertitudes et relie les observations aux tactiques et techniques de MITRE ATT&CK. Une hypothèse reste une question à examiner, et non une conclusion à démontrer à tout prix.
 
-Repeated failed logins can have innocent explanations. A successful login after failures does not, by itself, prove that an account was compromised.
+Des échecs de connexion répétés peuvent avoir des explications légitimes. Une connexion réussie après plusieurs échecs ne suffit pas, à elle seule, à prouver qu'un compte a été compromis.
+
+## Planification
+
+Le planning prévisionnel s'étend du **29 octobre au 26 novembre 2026**, du cadrage à la livraison du projet.
+
+![Diagramme de Gantt du projet](docs/project-gantt.png)
+
+Les étapes, les dépendances et les hypothèses sont détaillées dans le [document de planification](docs/project-gantt.md).
