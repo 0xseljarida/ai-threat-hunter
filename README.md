@@ -2,7 +2,7 @@
 
 ## Présentation du projet
 
-Ce projet vise à développer un agent d’intelligence artificielle pour la recherche de menaces dans un environnement local composé d’un Raspberry Pi et d’un PC. L’agent exploite les journaux d’authentification, système et d’audit de sécurité afin de préparer des investigations, rechercher des activités suspectes et produire des conclusions justifiées par des preuves. Le **Raspberry Pi** héberge les services surveillés ; le **PC ** héberge l’agent IA et le stockage des journaux.
+Ce projet vise à développer un agent d’intelligence artificielle pour la recherche de menaces dans un environnement local composé d’un Raspberry Pi et d’un PC. L’agent exploite les journaux d’authentification, système et d’audit de sécurité afin de préparer des investigations, rechercher des activités suspectes et produire des conclusions justifiées par des preuves. Le **Raspberry Pi** héberge les services surveillés ; le **PC** héberge l’agent IA et le stockage des journaux.
 
 ## Planification
 
